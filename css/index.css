@@ -3,6 +3,7 @@
   padding: 0px;
 }
 html {
+  background-color: #f4f3ee;
   color: #000a12;
   font-size: 16px;
   font-family: "Recursive", "Noto Sans TC", sans-serif;
@@ -129,9 +130,10 @@ header {
   width: 100%;
   /* margin: 30px auto 10px; */
   background-color: #b8b08d;
-  margin-top: 0px;
+  margin: 0 0 10px 0;
   display: flex;
   justify-content: space-between;
+  box-shadow: 2px 2px 8px #aaa;
 }
 .main-nav ul {
   display: flex;
@@ -174,10 +176,8 @@ header {
 
 article {
   width: 100%;
-  /* min-height: 50vh; */
-  border-radius: 5px;
   line-height: 2rem;
-  background-color: #f8f8f8;
+  background-color: #f4f3ee;
   padding-top: 10px;
 }
 
@@ -201,7 +201,7 @@ article h3 {
 .timeline li {
   width: 60%;
   position: relative;
-  padding: 20px 0;
+  padding: 10px 0;
   padding-left: 150px;
   margin: 0 auto;
 }
@@ -240,7 +240,7 @@ article h3 {
   position: absolute;
   /* margin: 0 10px; */
   left: 10px;
-  top: 30%;
+  top: 25%;
 }
 
 .timeline .item {
@@ -248,9 +248,9 @@ article h3 {
   padding: 10px;
   box-sizing: border-box;
   border: #ccc solid 1px;
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: 2px 2px 8px #aaa;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 /* point */
