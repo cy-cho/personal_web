@@ -41,7 +41,7 @@ header {
 
 .header-container {
   position: absolute;
-  top: 25%;
+  bottom: 10px;
   width: 100%;
 }
 
