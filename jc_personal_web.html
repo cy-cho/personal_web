@@ -12,6 +12,8 @@
         rel="stylesheet" />
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -46,16 +48,12 @@
     </header>
     <nav class="main-nav">
         <span class="main-icon"><a href="https://facebook.com/ccccho">
-                <svg class="icon-facebook2">
-                    <use xlink:href="./icomoon/symbol-defs.svg#icon-facebook2"></use>
-                </svg></a>
-            <a href="#" title="目前尚未開放">
-                <svg class="icon-instagram">
-                    <use xlink:href="./icomoon/symbol-defs.svg#icon-instagram"></use>
-                </svg></a>
-            <a href="mailto:cho.manycho@gmail.com"><svg class="icon-mail">
-                    <use xlink:href="./icomoon/symbol-defs.svg#icon-mail"></use>
-                </svg></a></span>
+                <i class="fab fa-facebook-square"></i></a>
+            <a href="#" title="https://github.com/cy-cho">
+                <i class="fab fa-github"></i></a>
+            <a href="mailto:cho.manycho@gmail.com">
+                <i class="fas fa-envelope"></i></a>
+        </span>
         <ul>
             <li><a href="jc_index.html">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -102,21 +100,48 @@
         <div class="portfolio-1">
             <div class="card">
                 <h4>個人網站</h4>
-                <div class="card-img-wrap"><img src="./images/personal_web.JPG" alt=""></div>
+                <div class="card-body">
+                    <div class="card-img-wrap"><img src="./images/personal_web.JPG" alt=""></div>
+                    <p>主要技術：HTML5, CSS3(Flex box), RWD</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <h4>個人網站-RWD</h4>
+                <div class="card-body">
+                    <div class="card-img-wrap"><img id="webRWD" src="./images/personal_web_RWD.JPG" alt=""></div>
+                    <p>主要技術：HTML5, CSS3(Flex box), RWD</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <h4>切版練習-equal parts官網首頁</h4>
+                <div class="card-body">
+                    <div class="card-img-wrap"><img src="./images/bootstrap_equalparts_first.png" alt=""></div>
 
-                <p>HTML5, CSS3(Flex box), RWD</p>
+                    <p>主要技術：HTML5, CSS3, Bootstrap</p>
+                </div>
             </div>
             <div class="card">
                 <h4>Falling Plants</h4>
-                <p>HTML5, CSS3, Bootstrap, JaveScript, jQuery</p>
+                <div class="card-body">
+                    <div class="card-img-wrap"><img src="./images/falling_plants_game.png" alt=""></div>
+                    <p>主要技術：HTML5, CSS3, Bootstrap, JaveScript, jQuery</p>
+                </div>
             </div>
             <div class="card">
-                <h4>尚在累積中...୧(๑•̀ω•́๑)୨</h4>
-                <p></p>
+                <h4>Soundar後臺管理介面與資料庫</h4>
+                <div class="card-body">
+                    <div class="card-img-wrap"><img src="./images/soudar_article_backend.png" alt=""></div>
+                    <p>主要技術：HTML5, CSS3, Bootstrap, PHP, MySQL</p>
+                </div>
             </div>
             <div class="card">
-                <h4>Soubdar</h4>
-                <p>React.js, Node.js</p>
+                <h4>Soundar</h4>
+                <div class="card-body">
+                    <div class="card-img-wrap"><img src="./images/soundar_article_page.JPG" alt=""></div>
+                    <p>主要技術：React.js, Node.js</p>
+                </div>
             </div>
         </div>
     </article>
