@@ -167,7 +167,7 @@ i {
   fill: currentcolor;
 }
 
-.main-icon svg:hover {
+.main-icon i:hover {
   color: #904840;
 }
 
