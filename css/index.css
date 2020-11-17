@@ -299,8 +299,19 @@ article h3 {
 
 .portfolio-1 .card-img-wrap {
   width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin: 0 auto;
-  /* filter: opacity(0.8); */
+}
+
+.portfolio-1 .card-img-wrap:hover {
+  transform: scale(1.2);
+}
+
+/* 隱藏Y軸scrollbar */
+::-webkit-scrollbar {
+  display: none;
 }
 
 .portfolio-1 .card img {
@@ -314,6 +325,7 @@ article h3 {
 .portfolio-1 .card p {
   width: 100%;
   font-size: 0.9rem;
+  text-align: left;
 }
 
 footer {
@@ -324,6 +336,19 @@ footer {
   line-height: 5vh;
   text-align: center;
   margin-bottom: 5px;
+}
+
+.click-to-top-btn {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: #333 1px 1px 8px;
+  background-color: #b8b08d;
+  text-align: center;
+  display: block;
 }
 
 @media (max-width: 768px) {
