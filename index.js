@@ -51,3 +51,21 @@ slideToPrevious2.addEventListener('click',()=>{
     slideToPrevious2.style.display = 'none'
     slideToNext2.style.display = 'block'
 })
+
+// click to open menu
+const menu = document.querySelector("#menu");
+const menuOpenStatus = document.querySelector('.main-nav ul');
+
+menu.addEventListener('click', () => {
+    if (!menuOpenStatus.style.height || menuOpenStatus.style.height === '0px') {
+        menuOpenStatus.style.height = '200px'; 
+        menu.classList.remove('fa-bars');
+        menu.classList.add('fa-xmark');
+        menuOpenStatus.style.visibility = 'visible'; 
+    } else {
+        menu.classList.remove('fa-xmark');
+        menu.classList.add('fa-bars');
+        menuOpenStatus.style.visibility = 'hidden'; 
+        menuOpenStatus.style.height = '0px';
+    }
+});

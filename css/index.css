@@ -69,13 +69,13 @@ header {
 }
 
 .front {
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
 }
 
 .back {
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   transform: rotateY(180deg);
   filter: opacity(0.9);
 }
@@ -138,6 +138,11 @@ header {
   justify-content: space-between;
   box-shadow: 2px 2px 8px #aaa;
 }
+
+.main-icon-menu {
+  display: none;
+}
+
 .main-nav ul {
   display: flex;
   justify-content: flex-end;
@@ -162,7 +167,7 @@ i {
   font-size: 20px;
   color: #f4f3ee;
   margin: 0 5px;
-  padding: 10px 5px;
+  padding: 10px;
   border-radius: 5px;
   fill: currentcolor;
 }
@@ -297,9 +302,15 @@ article h3 {
   margin: 0 auto;
 }
 
+.portfolio-1 .card-body p:last-child {
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: 8px;
+}
+
 .portfolio-1 .card-img-wrap {
   width: 100%;
-  height: 200px;
+  max-height: 200px;
   overflow-x: hidden;
   overflow-y: scroll;
   margin: 8px auto;
@@ -362,7 +373,7 @@ article h3 {
   position: absolute;
   font-size: 30px;
   color: #f8f8f8;
-  top: 30%;
+  top: 139px;
   left: 10px;
   display: none;
 }
@@ -371,7 +382,7 @@ article h3 {
   position: absolute;
   font-size: 30px;
   color: #f8f8f8;
-  top: 30%;
+  top: 139px;
   right: 10px;
 }
 
@@ -391,6 +402,7 @@ footer {
   right: 5vh;
   width: 45px;
   height: 45px;
+  padding-top: 3PX;
   border-radius: 50%;
   box-shadow: #333 1px 1px 5px;
   background-color: #b8b08d;
@@ -407,17 +419,38 @@ footer {
     width: 100%;
   }
 
-  .main-nav,
+  .main-nav {
+    flex-direction: column-reverse;
+    width: 100%;
+    position: relative;
+  }
+
+  .main-icon-menu {
+    display: block;
+    flex-grow: 1;
+  }
+
   .main-nav ul {
+    visibility: hidden;
+    background-color: #b8b08d;
     flex-direction: column;
     width: 100%;
+    height: 0px;
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    transition: height 0.5s ease-in-out;
   }
+
   .main-nav li {
-    padding-top: 20px;
     width: 100%;
+    padding: 15px;
   }
+
   .main-icon {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 
