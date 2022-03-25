@@ -374,7 +374,7 @@ article h3 {
   font-size: 30px;
   color: #f8f8f8;
   top: 139px;
-  left: 10px;
+  left: 0;
   display: none;
 }
 
@@ -383,7 +383,7 @@ article h3 {
   font-size: 30px;
   color: #f8f8f8;
   top: 139px;
-  right: 10px;
+  right: 0;
 }
 
 footer {
